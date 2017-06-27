@@ -1,3 +1,7 @@
+* Add session_alloc to example/common
+
+--------------------------------------------------------------------------------
+
 Version 71:
 
 * Fix extra ; warning

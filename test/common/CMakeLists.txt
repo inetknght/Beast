@@ -14,6 +14,7 @@ add_executable (common-test
     mutable_body.cpp
     mime_types.cpp
     rfc7231.cpp
+    session_alloc.cpp
     ssl_stream.cpp
     write_msg.cpp
     main.cpp
