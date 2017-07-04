@@ -4,6 +4,7 @@ HTTP:
 
 * basic_parser optimizations
 * Add basic_parser tests
+* Add file_body
 
 API Changes:
 

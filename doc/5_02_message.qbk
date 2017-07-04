@@ -145,6 +145,14 @@ meet the requirements, or use the ones that come with the library:
     with this body will generate a unique error.
 ]]
 [[
+    [link beast.ref.beast__http__file_body `file_body`]
+    [link beast.ref.beast__http__file_body_stdc `file_body_stdc`]
+][
+    This body is represented by an open file. It may be serialized
+    and parsed. The open file handle is stored in the `value_type`,
+    which must be opened before use.
+]]
+[[
     [link beast.ref.beast__http__string_body `string_body`]
 ][
     A body whose `value_type` is `std::string`. Insertion complexity
