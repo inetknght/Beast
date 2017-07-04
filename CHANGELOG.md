@@ -1,3 +1,5 @@
+* Add file_body
+
 API Changes:
 
 * serializer::next replaces serializer::get
