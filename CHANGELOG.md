@@ -1,4 +1,5 @@
 * Add file_body
+* Add file_body_win32
 
 API Changes:
 
