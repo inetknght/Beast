@@ -110,7 +110,7 @@ private:
         if(ec)
             return boost::none;
         res.set(http::field::content_length, res.body.size());
-        return res;
+        return {std::move(res)};
     }
 
     // Handle a request
@@ -138,7 +138,7 @@ private:
         full_path.append(req.target().data(), req.target().size());
 
         beast::error_code file_ec;
-        auto res = get(full_path, file_ec);
+        auto res{get(full_path, file_ec)};
 
         if(file_ec == beast::errc::no_such_file_or_directory)
             http::write(sock_, not_found(), ec);
