@@ -2,6 +2,7 @@ Version 73:
 
 * Avoid copy constructor on Apple LLVM
 * Jamroot tweak
+* Verify certificates in SSL clients
 
 HTTP:
 
