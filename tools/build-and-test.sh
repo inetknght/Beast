@@ -102,10 +102,7 @@ function build_bjam ()
      [[ $VARIANT == "ubasan" ]]; then
     b2 \
       cxxflags=-std=c++11 \
-      libs/beast/test/beast/core//fat-tests \
-      libs/beast/test/beast/http//fat-tests \
       libs/beast/test/beast/websocket//fat-tests \
-      libs/beast/test/beast/zlib//fat-tests \
       toolset=$TOOLSET \
       variant=$VARIANT \
       -j${JOBS}
